@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: RobotoLight;
+}
+body {
+    background: #f4f6f9;
+}
+#main {
+height: 100%;
+width: 100%;
+
+}
+.header {
+  position: absolute;
+  background: #4788ef;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+}
+.main__info {
+  z-index: 2;
+  position: relative;
+  width: 710px;
+  margin:0 auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
+}
+
+.main__skills {
+  width: 710px;
+  height: 380px;
+  padding: 10px;
+  background: #fff;
+  margin:0 auto;
+  box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background: #fff;
+  padding: 10px;
+}
+li {
+  display: block;
+  height:30px;
+  width: 50px;
+  margin-bottom:5px;
+  border-radius: 10%;
+  list-style: none;
+  font-family: RobotoMedium;
+ background: #fff;
+}
+.imgskill {
+ height:350px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+.some {
+  border: 10px;
+box-sizing: border-box;
+display: flex;
+font-family: Roboto, sans-serif;
+-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+cursor: pointer;
+text-decoration: none;
+margin: 4px;
+padding: 0px;
+outline: none;
+font-size: inherit;
+font-weight: inherit;
+background-color: rgb(224, 224, 224);
+border-radius: 16px;
+white-space: nowrap;
+width: -webkit-fit-content;
+}
+.some:hover {
+  background-color: #959191;
+}
+
+.some1 {
+  color: rgba(0, 0, 0, 0.870588);
+font-size: 14px;
+font-weight: 400;
+line-height: 32px;
+padding-left: 12px;
+padding-right: 12px;
+white-space: nowrap;
+-webkit-user-select: none;
+font-family: RobotoMedium;
+}
+
+.main__photo-links {
+  height: 100%;
+  width: 30%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.main__myInfo {
+  height: 90%;
+  width: 60%;
+  background: #fff;
+}
+
+.photo {
+  width:70%;
+  height:70%;
+  background: #fff;
+}
+
+.links {
+  height:25%;
+  width:70%;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  margin-top: 10px;
+}
+.link1, .link2 {
+  height: 50px;
+  width: 50px;
+  background: #345;
+}
+i {
+display: block;
+color: #707070;
+}
+.fa-github:hover {
+  cursor: pointer;
+  color: #000;
+}
+.fa-facebook-official:hover {
+  cursor: pointer;
+  color: #3B5998;
+}
+a:visited {
+  color: #ccc;
+}
+
+img{
+  display:block;
+}
+h2, h3 {
+  text-align:center;
+  font-family: RobotoBold;
+}
+
+.main__myInfo div span {
+  display: inline-block;
+    width: 90px;
+      font-family: RobotoMedium;
+}
+.main__myInfo div {
+  margin-bottom: 10px;
+  padding-left:20pxж
+  font-family: RobotoBold;
+}
+
+@font-face {
+ font-family: RobotoMedium; /* Имя шрифта */
+ src: url(fonts/RobotoMedium.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+ font-family: RobotoLight; /* Имя шрифта */
+ src: url(fonts/RobotoLight.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+ font-family: RobotoBold; /* Имя шрифта */
+ src: url(fonts/RobotoBold.ttf); /* Путь к файлу со шрифтом */
+}
