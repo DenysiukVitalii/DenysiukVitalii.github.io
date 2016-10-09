@@ -148,6 +148,10 @@ i {
 display: block;
 color: #707070;
 }
+.fa-github {
+  margin-left: 20px;
+  margin-right: 20px;
+}
 .fa-github:hover {
   cursor: pointer;
   color: #000;
@@ -155,6 +159,11 @@ color: #707070;
 .fa-facebook-official:hover {
   cursor: pointer;
   color: #3B5998;
+}
+
+.fa-file-pdf-o:hover {
+  cursor: pointer;
+  color: tomato;
 }
 a:visited {
   color: #ccc;
