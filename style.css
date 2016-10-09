@@ -150,6 +150,8 @@ font-family: RobotoMedium;
   width:70%;
   height:70%;
   background: #fff;
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
 }
 
 .links {
