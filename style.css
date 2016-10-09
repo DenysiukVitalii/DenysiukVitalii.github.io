@@ -36,13 +36,31 @@ width: 100%;
   box-sizing: border-box;
   box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
 }
-
 .main__skills {
-  width: 710px;
-  height: 380px;
+  width:710px;
+  background: #f4f6f9;;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.main__softskills {
+  width: 335px;
+  height: 390px;
   padding: 10px;
   background: #fff;
-  margin:0 auto;
+  box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+.main__hardskills {
+  width: 335px;
+  height: 390px;
+  padding: 10px;
+  background: #fff;
   box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
   display: flex;
   flex-direction: column;
@@ -53,6 +71,7 @@ width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
   width: 100%;
   background: #fff;
   padding: 10px;
@@ -74,6 +93,9 @@ li {
   justify-content: space-around;
   align-items: center;
 }
+.imgfront {
+  margin-top: 10px;
+}
 .some {
   border: 10px;
 box-sizing: border-box;
@@ -91,6 +113,7 @@ background-color: rgb(224, 224, 224);
 border-radius: 16px;
 white-space: nowrap;
 width: -webkit-fit-content;
+transition: 0.3s;
 }
 .some:hover {
   background-color: #959191;
