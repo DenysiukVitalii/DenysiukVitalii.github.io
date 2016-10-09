@@ -10,7 +10,8 @@ body {
 #main {
 height: 100%;
 width: 100%;
-
+margin: auto;
+min-width: 710px;
 }
 .header {
   position: absolute;
