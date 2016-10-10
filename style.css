@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: RobotoLight;
 }
+html, body, #main {
+    height: 100%;
+}
 body {
     background: #f4f6f9;
 }
@@ -17,8 +20,8 @@ body {
 }
 
 #main {
-height: 100%;
-width: 710px;
+width: 60%;
+min-width: 710px;
 margin:auto;
 z-index: 2;
 position: relative;
@@ -28,6 +31,8 @@ position: relative;
   padding: 10px;
   margin-top: 20px;
   margin-bottom: 10px;
+  width: 60vw;
+  min-width: 710px;
   background: #fff;
   display: flex;
   flex-direction: row;
@@ -39,13 +44,16 @@ position: relative;
 .main__skills {
   background: #f4f6f9;
   margin-bottom: 20px;
+  width: 60vw;
+  min-width: 710px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   box-sizing: border-box;
 }
 .main__softskills {
-  width: 335px;
+  width: 48%;
+  min-width: 335px;
   padding: 10px;
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
@@ -55,7 +63,8 @@ position: relative;
   box-sizing: border-box;
 }
 .main__hardskills {
-  width: 335px;
+  width: 48%;
+  min-width: 335px;
   padding: 10px;
   background: #fff;
   box-shadow: rgba(0, 0, 0, 0.156863) 0px 3px 10px, rgba(0, 0, 0, 0.227451) 0px 3px 10px;
@@ -75,7 +84,7 @@ position: relative;
 }
 
 .imgskill {
- height:350px;
+  height:350px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-around;
