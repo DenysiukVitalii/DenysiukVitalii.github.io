@@ -629,6 +629,13 @@ h2 {
 .hide {
   display: none !important; }
 
+.tab {
+  display: none; }
+
+.active-tab {
+  background-color: #5DA4D9 !important;
+  color: #fff !important; }
+
 aside {
   margin-bottom: 20px;
   background-color: #fff;
@@ -891,93 +898,96 @@ aside {
     #about .tech:hover span {
       color: #fff; }
 
-#portfolio p {
-  text-align: left;
-  font-size: 14px;
-  margin-top: 5px;
-  margin-bottom: 25px; }
-  #portfolio p a {
-    color: #5DA4D9; }
-    #portfolio p a:hover {
-      text-decoration: underline; }
-
-#portfolio .section {
-  background-color: #fff;
-  margin-bottom: 20px; }
-
-#portfolio .section-icon {
-  margin-top: 40px; }
-  #portfolio .section-icon i {
-    text-align: center;
-    display: block;
-    font-size: 30px;
-    color: #767270; }
-
-#portfolio h2, #portfolio h3 {
-  font-family: "RobotoRegular"; }
-
-#portfolio h3 {
-  margin: 0px;
-  font-size: 14px;
-  line-height: 20pt; }
-
-#portfolio h2 {
-  margin-top: 30px;
-  margin-bottom: 25px; }
-
-#portfolio .works {
-  margin-bottom: 80px; }
-
-#portfolio .card {
-  position: relative; }
-  #portfolio .card img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px; }
-  #portfolio .card span {
-    display: block;
-    font-family: RobotoMedium;
-    font-size: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    text-align: center;
-    border-left: 2px solid #5DA4D9;
-    border-right: 2px solid #5DA4D9;
-    border-bottom: 1px solid #ccc;
-    color: #17356A;
-    background-color: #F1F1F1; }
-  #portfolio .card p {
-    display: block;
+#portfolio {
+  color: #767270; }
+  #portfolio p {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 25px; }
+    #portfolio p a {
+      color: #5DA4D9; }
+      #portfolio p a:hover {
+        text-decoration: underline; }
+  #portfolio .section {
     background-color: #fff;
-    padding: 10px;
-    margin: 0;
-    border-left: 2px solid #5DA4D9;
-    border-right: 2px solid #5DA4D9;
-    text-align: center; }
-  #portfolio .card .myb {
-    font-size: 20px;
-    background: #5DA4D9;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 30px;
-    transition: 0.2s;
-    font-family: RobotoLight;
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px; }
-    #portfolio .card .myb:hover {
-      background: #4783c2;
+    margin-bottom: 20px; }
+  #portfolio .row {
+    margin-left: 0;
+    width: 100%; }
+  #portfolio .section-content {
+    padding-right: 0 !important; }
+  #portfolio .section-icon {
+    margin-top: 40px; }
+    #portfolio .section-icon i {
+      text-align: center;
+      display: block;
+      font-size: 30px;
+      color: #767270; }
+  #portfolio h2, #portfolio h3 {
+    font-family: "RobotoRegular"; }
+  #portfolio h3 {
+    margin: 0px;
+    font-size: 14px;
+    line-height: 20pt; }
+  #portfolio h2 {
+    margin-top: 30px;
+    margin-bottom: 25px; }
+  #portfolio .works {
+    margin-bottom: 80px; }
+  @media only screen and (max-width: 768px) {
+    #portfolio .works > div:first-child {
+      margin-bottom: 80px; } }
+  #portfolio .card {
+    position: relative; }
+    #portfolio .card img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px; }
+    #portfolio .card span {
+      display: block;
+      font-family: RobotoMedium;
+      font-size: 20px;
+      padding-bottom: 10px;
+      padding-top: 10px;
+      text-align: center;
+      border-left: 2px solid #5DA4D9;
+      border-right: 2px solid #5DA4D9;
+      border-bottom: 1px solid #ccc;
+      color: #17356A;
+      background-color: #F1F1F1; }
+    #portfolio .card p {
+      display: block;
+      background-color: #fff;
+      padding: 10px;
+      margin: 0;
+      border-left: 2px solid #5DA4D9;
+      border-right: 2px solid #5DA4D9;
+      text-align: center; }
+    #portfolio .card .myb {
+      font-size: 20px;
+      background: #5DA4D9;
       color: #fff;
-      text-decoration: none; }
-  #portfolio .card .technologies li {
-    display: inline-block;
-    margin: 0 5px; }
-    #portfolio .card .technologies li img {
-      width: 40px;
-      height: 40px; }
+      text-decoration: none;
+      padding: 10px 30px;
+      transition: 0.2s;
+      font-family: RobotoLight;
+      width: 100%;
+      position: absolute;
+      text-align: center;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px; }
+      #portfolio .card .myb:hover {
+        background: #4783c2;
+        color: #fff;
+        text-decoration: none; }
+    #portfolio .card .technologies li {
+      display: inline-block;
+      margin: 0 5px; }
+      #portfolio .card .technologies li img {
+        width: 40px;
+        height: 40px; }
 
 /*# sourceMappingURL=styles.css.map*/

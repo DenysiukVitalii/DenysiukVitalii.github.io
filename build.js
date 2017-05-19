@@ -67,21 +67,51 @@ var app =
 /******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
-/******/ ([
-/* 0 */
+/******/ ({
+
+/***/ 0:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 1 */
+
+/***/ 1:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
+__webpack_require__(18);
 __webpack_require__(0);
 
+/***/ }),
+
+/***/ 18:
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+(function () {
+    var items = document.getElementsByClassName("menu-item");
+    var components = document.getElementsByClassName("tab");
+    [].forEach.call(items, function (item) {
+        item.addEventListener('click', function () {
+            for (var i = 0; i < components.length; i++) {
+                if (this == items[i]) {
+                    components[i].classList.add("show");
+                    this.classList.add("active-tab");
+                } else {
+                    items[i].classList.remove("active-tab");
+                    components[i].classList.remove("show");
+                }
+            }
+        });
+    });
+})();
+
 /***/ })
-/******/ ]);
+
+/******/ });
 //# sourceMappingURL=build.js.map

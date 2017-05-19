@@ -1,4 +1,5 @@
 #portfolio {
+  color: $greytext;
   p {
     text-align: left;
     font-size: 14px;
@@ -14,6 +15,13 @@
   .section {
     background-color: #fff;
     margin-bottom: 20px;
+  }
+  .row {
+    margin-left: 0;
+    width: 100%;
+  }
+  .section-content {
+    padding-right: 0 !important;
   }
   .section-icon {
     margin-top: 40px;
@@ -39,8 +47,14 @@
   .works {
     margin-bottom: 80px;
   }
+  .works>div:first-child {
+    @include media(mobile) {
+      margin-bottom: 80px;
+    }
+  }
   .card {
     position: relative;
+
     img {
       max-width: 100%;
       height: auto;

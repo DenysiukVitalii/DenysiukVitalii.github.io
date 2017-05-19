@@ -4,3 +4,10 @@
 .hide {
   display: none !important;
 }
+.tab {
+  display: none;
+}
+.active-tab {
+  background-color: $blue !important;
+  color: #fff !important;
+}
