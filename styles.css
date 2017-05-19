@@ -620,6 +620,9 @@ a {
 h2 {
   margin: 5px 0; }
 
+.shadow {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
 .show {
   display: block !important; }
 
@@ -627,8 +630,13 @@ h2 {
   display: none !important; }
 
 aside {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  margin-bottom: 20px;
+  background-color: #fff;
   display: block; }
+  @media only screen and (min-width: 768px) {
+    aside {
+      position: fixed !important;
+      width: 22% !important; } }
   aside .feature-img {
     position: relative; }
   aside .title {
@@ -716,5 +724,171 @@ aside {
     font-size: 11px;
     width: 80%;
     margin: 10px auto; }
+  aside .download-cv {
+    height: 80px;
+    position: relative;
+    background-color: transparent; }
+  aside .my-cv {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    font-family: "RobotoRegular";
+    width: 70%;
+    padding: 10px 20px;
+    background-color: #5DA4D9;
+    text-align: center;
+    color: #fff;
+    transition: 0.3s; }
+    aside .my-cv:hover {
+      background-color: #4783c2; }
+    aside .my-cv i {
+      margin-right: 10px; }
+
+#about {
+  color: #767270; }
+  @media only screen and (max-width: 768px) {
+    #about {
+      padding: 0; } }
+  #about p {
+    text-align: left;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 25px; }
+  #about h2, #about h3 {
+    font-family: "RobotoRegular"; }
+  #about h3 {
+    margin: 0px;
+    font-size: 14px;
+    line-height: 20pt; }
+  #about h2 {
+    margin-top: 30px;
+    margin-bottom: 25px; }
+  #about span {
+    font-family: "RobotoRegular";
+    color: #5da4d9;
+    margin-top: 0px;
+    font-size: 10pt;
+    line-height: 15pt; }
+  #about .section {
+    background-color: #fff;
+    margin-bottom: 20px; }
+  #about .section-icon {
+    margin-top: 40px; }
+    #about .section-icon i {
+      text-align: center;
+      display: block;
+      font-size: 30px;
+      color: #767270; }
+  #about .row {
+    margin-left: 0;
+    width: 100%; }
+  #about .section-content {
+    padding-right: 0 !important; }
+  #about .item {
+    padding-right: 30px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #bdbdbd; }
+  #about .hobbies li {
+    display: inline-block;
+    position: relative;
+    margin: 0 20px;
+    cursor: pointer; }
+    #about .hobbies li:hover i, #about .hobbies li:hover h5 {
+      color: #5DA4D9; }
+  #about .hobbies i {
+    font-size: 30px;
+    display: block;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -moz-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    transition: 0.3s; }
+  #about .hobbies h5 {
+    margin: 40px 0;
+    transition: 0.3s; }
+  #about .myInfo div span {
+    display: inline-block;
+    width: 40px;
+    font-family: RobotoMedium;
+    font-size: 20px;
+    margin-bottom: 10px; }
+  #about .myInfo {
+    margin-bottom: 20px; }
+  #about .skills span {
+    text-transform: uppercase; }
+  #about .progress {
+    overflow: visible;
+    background-color: #ddd;
+    height: 8px !important;
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: 0.5rem 0 1rem 0; }
+    #about .progress .determinate {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      background-color: #4783c2;
+      -webkit-transition: width .3s linear;
+      -moz-transition: width .3s linear;
+      -o-transition: width .3s linear;
+      -ms-transition: width .3s linear;
+      transition: width .3s linear; }
+    #about .progress span {
+      font-size: 14px;
+      position: absolute;
+      color: #4783c2;
+      top: -28px;
+      right: 0; }
+  #about .technologies {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    padding-left: 0; }
+  #about .tech {
+    border: 5px;
+    box-sizing: border-box;
+    display: flex;
+    font-family: Roboto, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 2px;
+    padding: 0px;
+    outline: none;
+    font-size: inherit;
+    font-weight: inherit;
+    background-color: #e0e0e0;
+    border-radius: 16px;
+    white-space: nowrap;
+    width: -webkit-fit-content;
+    transition: 0.3s; }
+    #about .tech span {
+      transition: 0.3s;
+      color: rgba(0, 0, 0, 0.870588);
+      font-size: 12px;
+      font-weight: 400;
+      padding-left: 12px;
+      padding-right: 12px;
+      white-space: nowrap;
+      -webkit-user-select: none;
+      font-family: RobotoMedium; }
+    #about .tech:hover {
+      background-color: #4783c2; }
+    #about .tech:hover span {
+      color: #fff; }
 
 /*# sourceMappingURL=styles.css.map*/

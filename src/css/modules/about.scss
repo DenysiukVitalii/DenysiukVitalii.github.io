@@ -1,0 +1,171 @@
+#about {
+  color: $greytext;
+  @include media(mobile)  {
+    padding: 0;
+  }
+
+  p {
+    text-align: left;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+  h2,h3 {
+    font-family: "RobotoRegular";
+  }
+  h3 {
+    margin: 0px;
+    font-size: 14px;
+    line-height: 20pt;
+  }
+  h2 {
+      margin-top: 30px;
+      margin-bottom: 25px;
+  }
+  span {
+    font-family: "RobotoRegular";
+    color: #5da4d9;
+    margin-top: 0px;
+    font-size: 10pt;
+    line-height: 15pt;
+  }
+  .section {
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  .section-icon {
+    margin-top: 40px;
+    i {
+        text-align: center;
+        display: block;
+        font-size: 30px;
+        color: $greytext;
+    }
+  }
+  .row {
+    margin-left: 0;
+    width: 100%;
+  }
+  .section-content {
+    padding-right: 0 !important;
+  }
+  .item {
+    padding-right: 30px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #bdbdbd;
+  }
+
+  .hobbies {
+    li {
+      display: inline-block;
+      position: relative;
+      margin: 0 20px;
+      cursor: pointer;
+      &:hover i, &:hover h5{
+        color: $blue;
+      }
+    }
+    i {
+      font-size: 30px;
+      @include centerHorizontal();
+      transition: 0.3s;
+    }
+    h5 {
+      margin: 40px 0;
+      transition: 0.3s;
+    }
+  }
+
+  .myInfo div span {
+    display: inline-block;
+    width: 40px;
+    font-family: RobotoMedium;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .myInfo {
+    margin-bottom: 20px;
+  }
+
+  .skills {
+    span {
+      text-transform: uppercase;
+    }
+  }
+
+  .progress {
+    overflow: visible;
+    background-color: #ddd;
+    height: 8px !important;
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: 0.5rem 0 1rem 0;
+    .determinate {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      background-color: #4783c2;
+      -webkit-transition: width .3s linear;
+      -moz-transition: width .3s linear;
+      -o-transition: width .3s linear;
+      -ms-transition: width .3s linear;
+      transition: width .3s linear;
+    }
+    span {
+      font-size: 14px;
+      position: absolute;
+      color: #4783c2;
+      top: -28px;
+      right: 0;
+    }
+  }
+
+  .technologies {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      background: #fff;
+      padding: 20px;
+      padding-left: 0;
+    }
+  .tech {
+    border: 5px;
+    box-sizing: border-box;
+    display: flex;
+    font-family: Roboto, sans-serif;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+    margin: 2px;
+    padding: 0px;
+    outline: none;
+    font-size: inherit;
+    font-weight: inherit;
+    background-color: rgb(224, 224, 224);
+    border-radius: 16px;
+    white-space: nowrap;
+    width: -webkit-fit-content;
+    transition: 0.3s;
+    span {
+    transition: 0.3s;
+    color: rgba(0, 0, 0, 0.870588);
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 12px;
+    padding-right: 12px;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    font-family: RobotoMedium;
+    }
+      &:hover {
+        background-color: #4783c2;
+      }
+      &:hover span{
+        color: #fff;
+      }
+    }
+}
