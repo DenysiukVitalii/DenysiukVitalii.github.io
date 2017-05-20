@@ -41,3 +41,70 @@ h2 {
 .shadow {
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
+.tab {
+  color: $greytext;
+  @include media(mobile)  {
+    padding: 0;
+  }
+
+  p {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+  h2,h3 {
+    font-family: "RobotoRegular";
+  }
+  h3 {
+    margin: 0px;
+    font-size: 14px;
+    line-height: 20pt;
+  }
+  h2 {
+      margin-top: 30px;
+      margin-bottom: 25px;
+  }
+  span {
+    font-family: "RobotoRegular";
+    color: #5da4d9;
+    margin-top: 0px;
+    font-size: 10pt;
+    line-height: 15pt;
+  }
+  .section {
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  .section-icon {
+    margin-top: 40px;
+    i {
+        text-align: center;
+        display: block;
+        font-size: 30px;
+        color: $greytext;
+    }
+  }
+  .row {
+    margin-left: 0;
+    width: 100%;
+  }
+  .section-content {
+    padding-right: 0 !important;
+  }
+  .item {
+    padding-right: 30px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #bdbdbd;
+  }
+  .myInfo div span {
+    display: inline-block;
+    width: 40px;
+    font-family: RobotoMedium;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .myInfo {
+    margin-bottom: 20px;
+  }
+}

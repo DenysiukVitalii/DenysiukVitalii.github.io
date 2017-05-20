@@ -1,45 +1,4 @@
 #portfolio {
-  color: $greytext;
-  p {
-    text-align: left;
-    font-size: 14px;
-    margin-top: 5px;
-    margin-bottom: 25px;
-    a {
-      color: $blue;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-  .section {
-    background-color: #fff;
-    margin-bottom: 20px;
-  }
-  .row {
-    margin-left: 0;
-    width: 100%;
-  }
-  .section-content {
-    padding-right: 0 !important;
-  }
-  .section-icon {
-    margin-top: 40px;
-    i {
-        text-align: center;
-        display: block;
-        font-size: 30px;
-        color: $greytext;
-    }
-  }
-  h2,h3 {
-    font-family: "RobotoRegular";
-  }
-  h3 {
-    margin: 0px;
-    font-size: 14px;
-    line-height: 20pt;
-  }
   h2 {
       margin-top: 30px;
       margin-bottom: 25px;

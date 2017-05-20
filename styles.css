@@ -623,6 +623,59 @@ h2 {
 .shadow {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
+.tab {
+  color: #767270; }
+  @media only screen and (max-width: 768px) {
+    .tab {
+      padding: 0; } }
+  .tab p {
+    text-align: left;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 25px; }
+  .tab h2, .tab h3 {
+    font-family: "RobotoRegular"; }
+  .tab h3 {
+    margin: 0px;
+    font-size: 14px;
+    line-height: 20pt; }
+  .tab h2 {
+    margin-top: 30px;
+    margin-bottom: 25px; }
+  .tab span {
+    font-family: "RobotoRegular";
+    color: #5da4d9;
+    margin-top: 0px;
+    font-size: 10pt;
+    line-height: 15pt; }
+  .tab .section {
+    background-color: #fff;
+    margin-bottom: 20px; }
+  .tab .section-icon {
+    margin-top: 40px; }
+    .tab .section-icon i {
+      text-align: center;
+      display: block;
+      font-size: 30px;
+      color: #767270; }
+  .tab .row {
+    margin-left: 0;
+    width: 100%; }
+  .tab .section-content {
+    padding-right: 0 !important; }
+  .tab .item {
+    padding-right: 30px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #bdbdbd; }
+  .tab .myInfo div span {
+    display: inline-block;
+    width: 40px;
+    font-family: RobotoMedium;
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .tab .myInfo {
+    margin-bottom: 20px; }
+
 .show {
   display: block !important; }
 
@@ -757,237 +810,162 @@ aside {
     aside .my-cv i {
       margin-right: 10px; }
 
-#about {
-  color: #767270; }
-  @media only screen and (max-width: 768px) {
-    #about {
-      padding: 0; } }
-  #about p {
-    text-align: left;
-    font-size: 12px;
-    margin-top: 5px;
-    margin-bottom: 25px; }
-  #about h2, #about h3 {
-    font-family: "RobotoRegular"; }
-  #about h3 {
-    margin: 0px;
-    font-size: 14px;
-    line-height: 20pt; }
-  #about h2 {
-    margin-top: 30px;
-    margin-bottom: 25px; }
-  #about span {
-    font-family: "RobotoRegular";
-    color: #5da4d9;
-    margin-top: 0px;
-    font-size: 10pt;
-    line-height: 15pt; }
-  #about .section {
-    background-color: #fff;
-    margin-bottom: 20px; }
-  #about .section-icon {
-    margin-top: 40px; }
-    #about .section-icon i {
-      text-align: center;
-      display: block;
-      font-size: 30px;
-      color: #767270; }
-  #about .row {
-    margin-left: 0;
-    width: 100%; }
-  #about .section-content {
-    padding-right: 0 !important; }
-  #about .item {
-    padding-right: 30px;
-    margin-bottom: 25px;
-    border-bottom: 1px solid #bdbdbd; }
-  #about .hobbies li {
-    display: inline-block;
-    position: relative;
-    margin: 0 20px;
-    cursor: pointer; }
-    #about .hobbies li:hover i, #about .hobbies li:hover h5 {
-      color: #5DA4D9; }
-  #about .hobbies i {
-    font-size: 30px;
-    display: block;
+#about .hobbies li {
+  display: inline-block;
+  position: relative;
+  margin: 0 20px;
+  cursor: pointer; }
+  #about .hobbies li:hover i, #about .hobbies li:hover h5 {
+    color: #5DA4D9; }
+
+#about .hobbies i {
+  font-size: 30px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  transition: 0.3s; }
+
+#about .hobbies h5 {
+  margin: 40px 0;
+  transition: 0.3s; }
+
+#about .skills span {
+  text-transform: uppercase; }
+
+#about .progress {
+  overflow: visible;
+  background-color: #ddd;
+  height: 8px !important;
+  position: relative;
+  display: block;
+  width: 90%;
+  margin: 0.5rem 0 1rem 0; }
+  #about .progress .determinate {
     position: absolute;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    -moz-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    transition: 0.3s; }
-  #about .hobbies h5 {
-    margin: 40px 0;
-    transition: 0.3s; }
-  #about .myInfo div span {
-    display: inline-block;
-    width: 40px;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    background-color: #4783c2;
+    -webkit-transition: width .3s linear;
+    -moz-transition: width .3s linear;
+    -o-transition: width .3s linear;
+    -ms-transition: width .3s linear;
+    transition: width .3s linear; }
+  #about .progress span {
+    font-size: 14px;
+    position: absolute;
+    color: #4783c2;
+    top: -28px;
+    right: 0; }
+
+#about .technologies {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  padding-left: 0; }
+
+#about .tech {
+  border: 5px;
+  box-sizing: border-box;
+  display: flex;
+  font-family: Roboto, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 2px;
+  padding: 0px;
+  outline: none;
+  font-size: inherit;
+  font-weight: inherit;
+  background-color: #e0e0e0;
+  border-radius: 16px;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  transition: 0.3s; }
+  #about .tech span {
+    transition: 0.3s;
+    color: rgba(0, 0, 0, 0.870588);
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 12px;
+    padding-right: 12px;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    font-family: RobotoMedium; }
+  #about .tech:hover {
+    background-color: #4783c2; }
+  #about .tech:hover span {
+    color: #fff; }
+
+#portfolio h2 {
+  margin-top: 30px;
+  margin-bottom: 25px; }
+
+#portfolio .works {
+  margin-bottom: 80px; }
+
+@media only screen and (max-width: 768px) {
+  #portfolio .works > div:first-child {
+    margin-bottom: 80px; } }
+
+#portfolio .card {
+  position: relative; }
+  #portfolio .card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+  #portfolio .card span {
+    display: block;
     font-family: RobotoMedium;
     font-size: 20px;
-    margin-bottom: 10px; }
-  #about .myInfo {
-    margin-bottom: 20px; }
-  #about .skills span {
-    text-transform: uppercase; }
-  #about .progress {
-    overflow: visible;
-    background-color: #ddd;
-    height: 8px !important;
-    position: relative;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+    border-left: 2px solid #5DA4D9;
+    border-right: 2px solid #5DA4D9;
+    border-bottom: 1px solid #ccc;
+    color: #17356A;
+    background-color: #F1F1F1; }
+  #portfolio .card p {
     display: block;
-    width: 90%;
-    margin: 0.5rem 0 1rem 0; }
-    #about .progress .determinate {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      height: 100%;
-      background-color: #4783c2;
-      -webkit-transition: width .3s linear;
-      -moz-transition: width .3s linear;
-      -o-transition: width .3s linear;
-      -ms-transition: width .3s linear;
-      transition: width .3s linear; }
-    #about .progress span {
-      font-size: 14px;
-      position: absolute;
-      color: #4783c2;
-      top: -28px;
-      right: 0; }
-  #about .technologies {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-    background: #fff;
-    padding: 20px;
-    padding-left: 0; }
-  #about .tech {
-    border: 5px;
-    box-sizing: border-box;
-    display: flex;
-    font-family: Roboto, sans-serif;
-    -webkit-tap-highlight-color: transparent;
-    cursor: pointer;
-    text-decoration: none;
-    margin: 2px;
-    padding: 0px;
-    outline: none;
-    font-size: inherit;
-    font-weight: inherit;
-    background-color: #e0e0e0;
-    border-radius: 16px;
-    white-space: nowrap;
-    width: -webkit-fit-content;
-    transition: 0.3s; }
-    #about .tech span {
-      transition: 0.3s;
-      color: rgba(0, 0, 0, 0.870588);
-      font-size: 12px;
-      font-weight: 400;
-      padding-left: 12px;
-      padding-right: 12px;
-      white-space: nowrap;
-      -webkit-user-select: none;
-      font-family: RobotoMedium; }
-    #about .tech:hover {
-      background-color: #4783c2; }
-    #about .tech:hover span {
-      color: #fff; }
-
-#portfolio {
-  color: #767270; }
-  #portfolio p {
-    text-align: left;
-    font-size: 14px;
-    margin-top: 5px;
-    margin-bottom: 25px; }
-    #portfolio p a {
-      color: #5DA4D9; }
-      #portfolio p a:hover {
-        text-decoration: underline; }
-  #portfolio .section {
     background-color: #fff;
-    margin-bottom: 20px; }
-  #portfolio .row {
-    margin-left: 0;
-    width: 100%; }
-  #portfolio .section-content {
-    padding-right: 0 !important; }
-  #portfolio .section-icon {
-    margin-top: 40px; }
-    #portfolio .section-icon i {
-      text-align: center;
-      display: block;
-      font-size: 30px;
-      color: #767270; }
-  #portfolio h2, #portfolio h3 {
-    font-family: "RobotoRegular"; }
-  #portfolio h3 {
-    margin: 0px;
-    font-size: 14px;
-    line-height: 20pt; }
-  #portfolio h2 {
-    margin-top: 30px;
-    margin-bottom: 25px; }
-  #portfolio .works {
-    margin-bottom: 80px; }
-  @media only screen and (max-width: 768px) {
-    #portfolio .works > div:first-child {
-      margin-bottom: 80px; } }
-  #portfolio .card {
-    position: relative; }
-    #portfolio .card img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      border-top-left-radius: 5px;
-      border-top-right-radius: 5px; }
-    #portfolio .card span {
-      display: block;
-      font-family: RobotoMedium;
-      font-size: 20px;
-      padding-bottom: 10px;
-      padding-top: 10px;
-      text-align: center;
-      border-left: 2px solid #5DA4D9;
-      border-right: 2px solid #5DA4D9;
-      border-bottom: 1px solid #ccc;
-      color: #17356A;
-      background-color: #F1F1F1; }
-    #portfolio .card p {
-      display: block;
-      background-color: #fff;
-      padding: 10px;
-      margin: 0;
-      border-left: 2px solid #5DA4D9;
-      border-right: 2px solid #5DA4D9;
-      text-align: center; }
-    #portfolio .card .myb {
-      font-size: 20px;
-      background: #5DA4D9;
+    padding: 10px;
+    margin: 0;
+    border-left: 2px solid #5DA4D9;
+    border-right: 2px solid #5DA4D9;
+    text-align: center; }
+  #portfolio .card .myb {
+    font-size: 20px;
+    background: #5DA4D9;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: 0.2s;
+    font-family: RobotoLight;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+    #portfolio .card .myb:hover {
+      background: #4783c2;
       color: #fff;
-      text-decoration: none;
-      padding: 10px 30px;
-      transition: 0.2s;
-      font-family: RobotoLight;
-      width: 100%;
-      position: absolute;
-      text-align: center;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px; }
-      #portfolio .card .myb:hover {
-        background: #4783c2;
-        color: #fff;
-        text-decoration: none; }
-    #portfolio .card .technologies li {
-      display: inline-block;
-      margin: 0 5px; }
-      #portfolio .card .technologies li img {
-        width: 40px;
-        height: 40px; }
+      text-decoration: none; }
+  #portfolio .card .technologies li {
+    display: inline-block;
+    margin: 0 5px; }
+    #portfolio .card .technologies li img {
+      width: 40px;
+      height: 40px; }
 
 /*# sourceMappingURL=styles.css.map*/
