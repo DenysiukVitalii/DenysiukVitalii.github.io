@@ -3,6 +3,7 @@
   var components = document.getElementsByClassName("tab");
   [].forEach.call(items, function(item) {
       item.addEventListener('click', function () {
+          window.scrollTo(0,0);
           for (var i = 0; i < components.length; i++) {
               if (this == items[i]) {
                   components[i].classList.add("show");
