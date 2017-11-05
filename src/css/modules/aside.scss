@@ -1,135 +1,140 @@
 aside {
-  margin-bottom: 20px;
- @media screen and (min-width: 992px)  {
-   position: fixed !important;
-   width: 22% !important;
- }
- background-color: #fff;
-  display: block;
-  .feature-img {
-    position: relative;
-  }
-  .title {
+    margin-bottom: 20px;
+    @media screen and (min-width: 992px) {
+        position: fixed !important;
+        width: 22% !important;
+    }
+    background-color: #fff;
     display: block;
-    position: absolute;
-    @include centerHorizontal();
-    top: 60%;
-    font-family: RobotoRegular;
-    width: 80%;
-    color: #fff;
-     @media screen and (min-width: 992px) and (max-width: 1100px) {
-      h2 {
-        font-size: 16px;
-        margin-bottom: 0;
-      }
-      span {
-        margin-top: 0;
-        font-size: 12px;
-      }
+    .feature-img {
+        position: relative;
     }
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-    border: 0;
-  }
-  #menu {
-    margin: 0;
-    padding: 0;
-    border: none;
-    width: 100.1%;
-    @include translate(0, -4px);
-    li {
-      position: relative;
-      border: none;
-      width: 100%;
-      -webkit-user-select: none;  /* Chrome all / Safari all */
-       -moz-user-select: none;     /* Firefox all */
-       -ms-user-select: none;      /* IE 10+ */
-       user-select: none;          /* Likely future */
-      a {
-        border: none;
-        display: table;
-        text-align: right;
-        background: #33373d;
-        color: #85878b;
-        font-size: 16px;
-        text-transform: uppercase;
-        padding: 15px 25px;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        width: 100%;
-
-        i {
-          position: absolute;
-          left: 25px;
-          font-size: 16px;
-        }
-        &:hover {
-          background-color: $blue;
-          color: #fff;
-        }
-      }
-    }
-  }
-  .footer-aside {
-
-    .links {
-      text-align: center;
-      margin: 10px 0;
-      li {
-        display: inline-block;
-        margin-right: 2px;
+    .title {
+        display: block;
+        position: absolute;
+        @include centerHorizontal();
+        top: 66%;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 5px;
         text-align: center;
-        a {
-          border: 2px solid #33373d;
-          color: #33373d;
-          display: inline-block;
-          height: 35px;
-          width: 35px;
-          border-radius: 100%;
-          -webkit-border-radius: 100%;
-          position: relative;
-          transition: .3s;
-          i {
-            @include center();
-            transition: .3s;
-          }
-          &:hover {
-            border-color: $blue;
-          }
-          &:hover i{
-            color: $blue;
-          }
+        font-family: RobotoRegular;
+        width: 80%;
+        color: #fff;
+        @media screen and (min-width: 992px) and (max-width: 1100px) {
+            h2 {
+                font-size: 16px;
+                margin-bottom: 0;
+            }
+            span {
+                margin-top: 0;
+                font-size: 12px;
+            }
         }
-      }
     }
-    .copyright {
-      font-size: 11px;
-      width: 80%;
-      margin: 10px auto;
+    img {
+        max-width: 100%;
+        height: auto;
+        border: 0;
     }
-  }
-  .download-cv {
-    height: 80px;
-    position: relative;
-    background-color: transparent;
-  }
-  .my-cv {
-    @include center();
-    margin: 0 auto;
-    font-family: "RobotoRegular";
-    width: 70%;
-    padding: 10px 20px;
-    background-color: $blue;
-    text-align: center;
-    color: #fff;
-    transition: 0.3s;
-    &:hover {
-      background-color: #4783c2;
+    #menu {
+        margin: 0;
+        padding: 0;
+        border: none;
+        width: 100.1%;
+        @include translate(0, -4px);
+        li {
+            position: relative;
+            border: none;
+            width: 100%;
+            -webkit-user-select: none;
+            /* Chrome all / Safari all */
+            -moz-user-select: none;
+            /* Firefox all */
+            -ms-user-select: none;
+            /* IE 10+ */
+            user-select: none;
+            /* Likely future */
+            a {
+                border: none;
+                display: table;
+                text-align: right;
+                background: #33373d;
+                color: #85878b;
+                font-size: 16px;
+                text-transform: uppercase;
+                padding: 15px 25px;
+                -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+                width: 100%;
+                i {
+                    position: absolute;
+                    left: 25px;
+                    font-size: 16px;
+                }
+                &:hover {
+                    background-color: $blue;
+                    color: #fff;
+                }
+            }
+        }
     }
-    i {
-      margin-right: 10px;
+    .footer-aside {
+        .links {
+            text-align: center;
+            margin: 10px 0;
+            li {
+                display: inline-block;
+                margin-right: 2px;
+                text-align: center;
+                a {
+                    border: 2px solid #33373d;
+                    color: #33373d;
+                    display: inline-block;
+                    height: 35px;
+                    width: 35px;
+                    border-radius: 100%;
+                    -webkit-border-radius: 100%;
+                    position: relative;
+                    transition: .3s;
+                    i {
+                        @include center();
+                        transition: .3s;
+                    }
+                    &:hover {
+                        border-color: $blue;
+                    }
+                    &:hover i {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+        .copyright {
+            font-size: 11px;
+            width: 80%;
+            margin: 10px auto;
+        }
     }
-  }
+    .download-cv {
+        height: 80px;
+        position: relative;
+        background-color: transparent;
+    }
+    .my-cv {
+        @include center();
+        margin: 0 auto;
+        font-family: "RobotoRegular";
+        width: 70%;
+        padding: 10px 20px;
+        background-color: $blue;
+        text-align: center;
+        color: #fff;
+        transition: 0.3s;
+        &:hover {
+            background-color: #4783c2;
+        }
+        i {
+            margin-right: 10px;
+        }
+    }
 }
